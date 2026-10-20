@@ -13,6 +13,8 @@ BASES = ("points", "shell", "wire", "disc", "orbits", "helix", "hypercube")
 SLUG = re.compile(r"^[a-z0-9][a-z0-9-]{0,39}$")
 SIGNATURE = {"displace.glsl": (re.compile(r"\bvec3\s+displace\s*\(\s*vec3\s+\w+\s*\)"), "vec3 displace(vec3 p)"),
              "shade.glsl": (re.compile(r"\bvec4\s+shade\s*\(\s*vec3\s+\w+\s*\)"), "vec4 shade(vec3 base)")}
+# Names a pack must not declare: GLSL reserves gl_*, and Jarvis's wrapper already defines the rest.
+TAKEN = re.compile(r"\b(?:void|float|int|bool|[biu]?vec[234]|mat[234])\s+(gl_\w*|main|snoise|mod289|permute|taylorInvSqrt|field|displaced)\s*[(;=,]")
 
 
 def check(folder):
@@ -36,6 +38,8 @@ def check(folder):
     for n, (sig, want) in SIGNATURE.items():
         if (folder / n).exists() and not sig.search((folder / n).read_text()):
             errors.append(f"{n} must define {want}")
+        if (folder / n).exists() and (hit := TAKEN.search((folder / n).read_text())):
+            errors.append(f"{n} declares {hit.group(1)}, a name that is taken (gl_ names are reserved)")
     return errors
 
 

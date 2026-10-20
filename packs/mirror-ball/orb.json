@@ -1,0 +1,9 @@
+{
+  "name": "Mirror Ball",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "A sphere of square mirror tiles catching a turning light, glinting more as you speak.",
+  "base": "shell",
+  "params": { "density": 24, "spinY": 0.25, "wobble": 0.05, "alpha": 1.0 },
+  "colors": { "accent": "#c8d6ff", "thinking": "#ffd166" }
+}
