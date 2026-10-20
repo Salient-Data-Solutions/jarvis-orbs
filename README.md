@@ -9,14 +9,26 @@ New looks for the orb in Jarvis, the macOS voice assistant.
    Or download the `.zip` from [`dist/`](dist) and use **Install from file…**.
 3. Press **Use** on the new card.
 
-| Pack | What it looks like | Base | Install link |
+| Pack | What it looks like | Based on | Install link |
 |---|---|---|---|
-| **Arc Reactor Mk II** | A face-on reactor: a bright triangle, ten spokes and rings that pulse outward as you speak. | `disc` | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/arc-reactor-mk-ii.zip` |
-| **Helix** | A twin data stream spiralling upward, pulses climbing it while you talk. | `helix` | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/helix.zip` |
-| **Iris** | A mechanical aperture: eight blades that open as your voice rises. | `disc` | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/iris.zip` |
-| **Plasma** | A churning ball of charged gas, hotter and faster when you speak. | `points` | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/plasma.zip` |
-| **Ringworld** | Gyroscope rings at every angle, rippling like plucked strings when you speak. | `orbits` | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/ringworld.zip` |
-| **Tesseract** | A four-dimensional cube turning through itself, its edges flaring when you talk. | `hypercube` | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/tesseract.zip` |
+| **Arc Reactor Mk II** | A face-on reactor: a bright triangle, ten spokes and rings that pulse outward as you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/arc-reactor-mk-ii.zip` |
+| **Cells** | Living Voronoi cells with glowing borders that swell and divide as you speak. | [A Cellular Texture Basis Function (SIGGRAPH 1996)](https://dl.acm.org/doi/10.1145/237170.237267) by Steven Worley (algorithm) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/cells.zip` |
+| **Gimbal Harmonics** | Fifteen nested half-rings, each turning at its own harmonic of the one outside it. | [Gimbal Harmonics](https://www.shadertoy.com/view/llS3zd) by Otavio Good (CC0) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/gimbal-harmonics.zip` |
+| **Helix** | A twin data stream spiralling upward, pulses climbing it while you talk. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/helix.zip` |
+| **Hexagon Plasma** | A hexagonal lens of interference plasma, rippling faster as you speak. | [Hexagon Plasma](https://www.shadertoy.com/view/3fy3z3) by Nemerix (MIT) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/hex-plasma.zip` |
+| **Iris** | A mechanical aperture: eight blades that open as your voice rises. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/iris.zip` |
+| **Lava** | The classic three.js lava shader wrapped around a sphere: molten crust that flows faster as you speak. | [webgl_shader_lava](https://github.com/mrdoob/three.js/blob/dev/examples/webgl_shader_lava.html) by three.js authors (MIT) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/lava.zip` |
+| **Nox Fire** | A ball of turbulent flame: layered sine noise that roars hotter when you speak. | [Nox Fire](https://www.shadertoy.com/view/wfG3Dz) by Matt Vianueva (MIT) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/nox-fire.zip` |
+| **Plasma** | A churning ball of charged gas, hotter and faster when you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/plasma.zip` |
+| **Ringworld** | Gyroscope rings at every angle, rippling like plucked strings when you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/ringworld.zip` |
+| **Star Nest** | Kali's famous volumetric star field, folded inside the orb and brightening as you speak. | [Star Nest](https://www.shadertoy.com/view/XlfGRj) by Pablo Roman Andrioli (Kali) (MIT) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/star-nest.zip` |
+| **Tesseract** | A four-dimensional cube turning through itself, its edges flaring when you talk. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/tesseract.zip` |
+| **Topologica** | Electric filaments where two slow noise fields cross, crackling brighter when you speak. | [Topologica](https://www.shadertoy.com/view/4djXzz) by Otavio Good (CC0) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/topologica.zip` |
+| **Universe Ball** | A gem-faceted cosmos that folds and twists through itself, its colours cycling as you talk. | [Universe Ball 2](https://www.shadertoy.com/view/WcGcWV) by Matt Vianueva (MIT) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/universe-ball.zip` |
+
+Packs ported from other people's shaders credit them in `orb.json` (`credit`) and at the top of
+each shader. Only code under a licence that allows it (MIT, CC0) is ported; the full notices are in
+[THIRD_PARTY.md](THIRD_PARTY.md).
 
 ## Why a pack is safe to install
 
@@ -85,3 +97,6 @@ vec3 displace(vec3 p) {
 2. Unzip your pack into `packs/<name>/`, using lowercase letters, digits and dashes for the name.
 3. Run `python3 build.py`, which checks the pack and writes `dist/<name>.zip`.
 4. Open a pull request with both, and add a row to the table above.
+
+Porting someone else's shader? Check its licence first (Shadertoy's default, CC BY-NC-SA, does not allow it
+here), add a `credit` to `orb.json`, and add its notice to THIRD_PARTY.md.

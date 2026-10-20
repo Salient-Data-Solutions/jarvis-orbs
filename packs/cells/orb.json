@@ -1,0 +1,23 @@
+{
+  "name": "Cells",
+  "author": "Jarvis, after Steven Worley",
+  "version": "1",
+  "description": "Living Voronoi cells with glowing borders that swell and divide as you speak.",
+  "base": "shell",
+  "params": {
+    "density": 24,
+    "spinY": 0.08,
+    "wobble": 0.1,
+    "alpha": 0.95
+  },
+  "colors": {
+    "accent": "#36e39a",
+    "thinking": "#ffb547"
+  },
+  "credit": {
+    "title": "A Cellular Texture Basis Function (SIGGRAPH 1996)",
+    "author": "Steven Worley",
+    "url": "https://dl.acm.org/doi/10.1145/237170.237267",
+    "license": "algorithm; code written for this pack (MIT)"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Star Nest",
+  "author": "Pablo Roman Andrioli (port)",
+  "version": "1",
+  "description": "Kali's famous volumetric star field, folded inside the orb and brightening as you speak.",
+  "base": "shell",
+  "params": {
+    "density": 24,
+    "spinY": 0.05,
+    "wobble": 0.08,
+    "alpha": 0.95
+  },
+  "colors": {
+    "accent": "#7fb4ff",
+    "thinking": "#ffcf7f"
+  },
+  "credit": {
+    "title": "Star Nest",
+    "author": "Pablo Roman Andrioli (Kali)",
+    "url": "https://www.shadertoy.com/view/XlfGRj",
+    "license": "MIT"
+  }
+}

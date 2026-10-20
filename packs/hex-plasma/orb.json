@@ -1,0 +1,24 @@
+{
+  "name": "Hexagon Plasma",
+  "author": "Nemerix (port)",
+  "version": "1",
+  "description": "A hexagonal lens of interference plasma, rippling faster as you speak.",
+  "base": "disc",
+  "params": {
+    "density": 34,
+    "spinZ": 0.04,
+    "wobble": 0.12,
+    "alpha": 1.0,
+    "size": 2.4
+  },
+  "colors": {
+    "accent": "#1a99cc",
+    "thinking": "#ffd166"
+  },
+  "credit": {
+    "title": "Hexagon Plasma",
+    "author": "Nemerix",
+    "url": "https://www.shadertoy.com/view/3fy3z3",
+    "license": "MIT"
+  }
+}

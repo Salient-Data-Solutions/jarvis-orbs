@@ -1,0 +1,23 @@
+{
+  "name": "Universe Ball",
+  "author": "Matt Vianueva (port)",
+  "version": "1",
+  "description": "A gem-faceted cosmos that folds and twists through itself, its colours cycling as you talk.",
+  "base": "shell",
+  "params": {
+    "density": 24,
+    "spinY": 0.12,
+    "wobble": 0.1,
+    "alpha": 0.9
+  },
+  "colors": {
+    "accent": "#c38cff",
+    "thinking": "#ffb547"
+  },
+  "credit": {
+    "title": "Universe Ball 2",
+    "author": "Matt Vianueva",
+    "url": "https://www.shadertoy.com/view/WcGcWV",
+    "license": "MIT"
+  }
+}

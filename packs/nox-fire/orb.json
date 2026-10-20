@@ -1,0 +1,24 @@
+{
+  "name": "Nox Fire",
+  "author": "Matt Vianueva (port)",
+  "version": "1",
+  "description": "A ball of turbulent flame: layered sine noise that roars hotter when you speak.",
+  "base": "points",
+  "params": {
+    "density": 34,
+    "spinY": 0.1,
+    "wobble": 0.05,
+    "alpha": 0.9,
+    "size": 1.9
+  },
+  "colors": {
+    "accent": "#ff7a2f",
+    "thinking": "#ffd166"
+  },
+  "credit": {
+    "title": "Nox Fire",
+    "author": "Matt Vianueva",
+    "url": "https://www.shadertoy.com/view/wfG3Dz",
+    "license": "MIT"
+  }
+}

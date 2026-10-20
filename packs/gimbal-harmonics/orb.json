@@ -1,0 +1,24 @@
+{
+  "name": "Gimbal Harmonics",
+  "author": "Otavio Good (port)",
+  "version": "1",
+  "description": "Fifteen nested half-rings, each turning at its own harmonic of the one outside it.",
+  "base": "disc",
+  "params": {
+    "density": 36,
+    "spinZ": 0.0,
+    "wobble": 0.25,
+    "alpha": 1.0,
+    "size": 2.4
+  },
+  "colors": {
+    "accent": "#ffcf6b",
+    "thinking": "#59d6ff"
+  },
+  "credit": {
+    "title": "Gimbal Harmonics",
+    "author": "Otavio Good",
+    "url": "https://www.shadertoy.com/view/llS3zd",
+    "license": "CC0"
+  }
+}

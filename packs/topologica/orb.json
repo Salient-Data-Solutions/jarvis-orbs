@@ -1,0 +1,24 @@
+{
+  "name": "Topologica",
+  "author": "Otavio Good (port)",
+  "version": "1",
+  "description": "Electric filaments where two slow noise fields cross, crackling brighter when you speak.",
+  "base": "points",
+  "params": {
+    "density": 36,
+    "spinY": 0.04,
+    "wobble": 0.08,
+    "alpha": 1.0,
+    "size": 2.0
+  },
+  "colors": {
+    "accent": "#1a66ff",
+    "thinking": "#59d6ff"
+  },
+  "credit": {
+    "title": "Topologica",
+    "author": "Otavio Good",
+    "url": "https://www.shadertoy.com/view/4djXzz",
+    "license": "CC0"
+  }
+}
