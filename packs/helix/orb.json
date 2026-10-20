@@ -1,0 +1,18 @@
+{
+  "name": "Helix",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "A twin data stream spiralling upward, pulses climbing it while you talk.",
+  "base": "helix",
+  "params": {
+    "density": 24,
+    "spinY": 0.35,
+    "wobble": 0.1,
+    "alpha": 1.0,
+    "size": 3.0
+  },
+  "colors": {
+    "accent": "#59d6ff",
+    "thinking": "#ffb547"
+  }
+}

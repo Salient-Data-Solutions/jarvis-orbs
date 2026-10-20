@@ -1,0 +1,16 @@
+{
+  "name": "Tesseract",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "A four-dimensional cube turning through itself, its edges flaring when you talk.",
+  "base": "hypercube",
+  "params": {
+    "spinY": 0.18,
+    "wobble": 0.15,
+    "alpha": 1.0
+  },
+  "colors": {
+    "accent": "#9a8cff",
+    "thinking": "#ff9d5c"
+  }
+}

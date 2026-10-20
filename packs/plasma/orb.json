@@ -1,0 +1,19 @@
+{
+  "name": "Plasma",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "A churning ball of charged gas, hotter and faster when you speak.",
+  "base": "points",
+  "params": {
+    "density": 30,
+    "spinY": 0.25,
+    "wobble": 0.2,
+    "alpha": 0.8,
+    "size": 1.6
+  },
+  "colors": {
+    "accent": "#ff6bd6",
+    "thinking": "#ffb547"
+  },
+  "shell": true
+}

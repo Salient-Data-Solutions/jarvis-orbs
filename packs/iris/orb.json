@@ -1,0 +1,18 @@
+{
+  "name": "Iris",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "A mechanical aperture: eight blades that open as your voice rises.",
+  "base": "disc",
+  "params": {
+    "density": 30,
+    "spinZ": -0.05,
+    "wobble": 0.1,
+    "alpha": 1.0,
+    "size": 2.6
+  },
+  "colors": {
+    "accent": "#59ffd0",
+    "thinking": "#ffd166"
+  }
+}
