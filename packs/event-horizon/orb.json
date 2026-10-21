@@ -1,0 +1,9 @@
+{
+  "name": "Event Horizon",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "A black hole from above: an empty shadow, a burning photon ring, and an accretion disc spiralling in faster as you speak.",
+  "base": "disc",
+  "params": { "density": 38, "spinZ": 0, "wobble": 0.35, "alpha": 1.0, "size": 3.4 },
+  "colors": { "accent": "#ff9a3c", "thinking": "#ffe08a" }
+}

@@ -6,6 +6,7 @@ New looks for the orb in Jarvis, the macOS voice assistant.
 
 1. Open Jarvis, then **Settings → Look → Orb packs**.
 2. Copy a pack's install link from the table below, paste it into the link box, and press **Install**.
+   A GitHub page link to a pack's `.zip` or its folder in [`packs/`](packs) works too.
    Or download the `.zip` from [`dist/`](dist) and use **Install from file…**.
 3. Press **Use** on the new card.
 
@@ -13,14 +14,22 @@ New looks for the orb in Jarvis, the macOS voice assistant.
 |---|---|---|---|
 | **Arc Reactor Mk II** | A face-on reactor: a bright triangle, ten spokes and rings that pulse outward as you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/arc-reactor-mk-ii.zip` |
 | **Cells** | Living Voronoi cells with glowing borders that swell and divide as you speak. | [A Cellular Texture Basis Function (SIGGRAPH 1996)](https://dl.acm.org/doi/10.1145/237170.237267) by Steven Worley (algorithm) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/cells.zip` |
+| **Cymatics** | The sphere rings like a bell in standing waves, its mode changing every few seconds and deepening as you speak; the still lines glow. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/cymatics.zip` |
+| **Data Rain** | Columns of glyphs falling down a globe, each at its own speed, pouring faster as you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/data-rain.zip` |
+| **Event Horizon** | A black hole from above: an empty shadow, a burning photon ring, and an accretion disc spiralling in faster as you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/event-horizon.zip` |
+| **Gas Giant** | A banded giant planet with turbulent belts and a great storm; the bands ripple as you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/gas-giant.zip` |
 | **Gimbal Harmonics** | Fifteen nested half-rings, each turning at its own harmonic of the one outside it. | [Gimbal Harmonics](https://www.shadertoy.com/view/llS3zd) by Otavio Good (CC0) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/gimbal-harmonics.zip` |
+| **Glitch** | A hologram that tears: slices jump sideways for a frame and flash magenta, more often while you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/glitch.zip` |
 | **Helix** | A twin data stream spiralling upward, pulses climbing it while you talk. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/helix.zip` |
 | **Hexagon Plasma** | A hexagonal lens of interference plasma, rippling faster as you speak. | [Hexagon Plasma](https://www.shadertoy.com/view/3fy3z3) by Nemerix (MIT) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/hex-plasma.zip` |
+| **Holo Earth** | A holographic globe: continents of lit dots, a graticule, and a scan line sweeping pole to pole, faster as you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/holo-earth.zip` |
 | **Iris** | A mechanical aperture: eight blades that open as your voice rises. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/iris.zip` |
 | **Lava** | The classic three.js lava shader wrapped around a sphere: molten crust that flows faster as you speak. | [webgl_shader_lava](https://github.com/mrdoob/three.js/blob/dev/examples/webgl_shader_lava.html) by three.js authors (MIT) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/lava.zip` |
+| **Mirror Ball** | A sphere of square mirror tiles catching a turning light, glinting more as you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/mirror-ball.zip` |
 | **Nox Fire** | A ball of turbulent flame: layered sine noise that roars hotter when you speak. | [Nox Fire](https://www.shadertoy.com/view/wfG3Dz) by Matt Vianueva (MIT) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/nox-fire.zip` |
 | **Plasma** | A churning ball of charged gas, hotter and faster when you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/plasma.zip` |
 | **Ringworld** | Gyroscope rings at every angle, rippling like plucked strings when you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/ringworld.zip` |
+| **Solar Flare** | A small star: boiling granules, drifting sunspots, and plasma lifting off the surface when you speak. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/solar-flare.zip` |
 | **Star Nest** | Kali's famous volumetric star field, folded inside the orb and brightening as you speak. | [Star Nest](https://www.shadertoy.com/view/XlfGRj) by Pablo Roman Andrioli (Kali) (MIT) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/star-nest.zip` |
 | **Tesseract** | A four-dimensional cube turning through itself, its edges flaring when you talk. | original | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/tesseract.zip` |
 | **Topologica** | Electric filaments where two slow noise fields cross, crackling brighter when you speak. | [Topologica](https://www.shadertoy.com/view/4djXzz) by Otavio Good (CC0) | `https://raw.githubusercontent.com/Salient-Data-Solutions/jarvis-orbs/main/dist/topologica.zip` |
@@ -78,6 +87,10 @@ What your shaders can read:
 | `uTint`, `uHot` | the accent and highlight colours |
 | `vPos` | the point's position, in `shade` |
 | `snoise(vec3)` | 3D simplex noise |
+
+Give your own functions a short prefix of your own (`cl_hash`, `eh_fbm`). Names starting with
+`gl_` are reserved by GLSL, and `main`, `snoise`, `mod289`, `permute`, `taylorInvSqrt`, `field` and
+`displaced` are already taken; `build.py` refuses them.
 
 Example, from Plasma:
 

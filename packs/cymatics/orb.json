@@ -1,0 +1,9 @@
+{
+  "name": "Cymatics",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "The sphere rings like a bell in standing waves, its mode changing every few seconds and deepening as you speak; the still lines glow.",
+  "base": "points",
+  "params": { "density": 40, "spinY": 0.08, "wobble": 0.12, "alpha": 0.9, "size": 1.6 },
+  "colors": { "accent": "#7aa8ff", "thinking": "#ff7ad9" }
+}

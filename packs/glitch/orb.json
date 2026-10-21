@@ -1,0 +1,9 @@
+{
+  "name": "Glitch",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "A hologram that tears: slices jump sideways for a frame and flash magenta, more often while you speak.",
+  "base": "wire",
+  "params": { "density": 26, "spinY": 0.2, "wobble": 0.15, "alpha": 0.95 },
+  "colors": { "accent": "#3fffe8", "thinking": "#ff4fd8" }
+}

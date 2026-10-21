@@ -1,0 +1,9 @@
+{
+  "name": "Solar Flare",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "A small star: boiling granules, drifting sunspots, and plasma lifting off the surface when you speak.",
+  "base": "shell",
+  "params": { "density": 26, "spinY": 0.05, "wobble": 0.08, "alpha": 0.9 },
+  "colors": { "accent": "#ff8a1f", "thinking": "#ffe08a" }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Gas Giant",
+  "author": "Jarvis",
+  "version": "1",
+  "description": "A banded giant planet with turbulent belts and a great storm; the bands ripple as you speak.",
+  "base": "shell",
+  "params": { "density": 26, "spinY": 0.12, "wobble": 0.06, "alpha": 0.9 },
+  "colors": { "accent": "#d9a066", "thinking": "#ff6b3d" }
+}
